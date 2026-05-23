@@ -1,0 +1,153 @@
+aid: cerebras
+name: Cerebras
+description: >-
+  Cerebras Systems designs the wafer-scale WSE-3 chip and the CS-2/CS-3 AI
+  systems built around it, and operates Cerebras Inference, a high-throughput
+  cloud platform for running open-source large language models including
+  Llama, Qwen, and DeepSeek families. Cerebras Inference is positioned as one
+  of the fastest token-generation services in the market, with OpenAI-compatible
+  REST endpoints, first-party Python and Node.js SDKs, and dedicated and
+  on-prem deployment options for enterprise customers. The company partners
+  with OpenAI, AWS, GSK, Mayo Clinic, and Notion, and maintains an active open
+  source presence including its model garden and inference cookbook on GitHub.
+type: Index
+position: Provider
+access: 3rd-Party
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - AI Inference
+  - Large Language Models
+  - Wafer Scale
+  - Hardware
+  - Cloud
+  - OpenAI Compatible
+  - LLM
+  - SDK
+  - Accelerator
+  - High Performance Computing
+url: https://raw.githubusercontent.com/api-evangelist/cerebras/refs/heads/main/apis.yml
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.20'
+apis:
+  - aid: cerebras:cerebras-inference-api
+    name: Cerebras Inference API
+    description: >-
+      The Cerebras Inference API exposes ultra-low-latency inference for
+      open-weight large language models including Llama 3.1, Llama 4, Qwen,
+      and other frontier open models. The API is OpenAI-compatible at the
+      chat completions surface, supports streaming, and is consumed via
+      first-party Python and Node.js SDKs as well as raw HTTP. Dedicated and
+      on-prem deployments are available for production workloads.
+    humanURL: https://inference-docs.cerebras.ai
+    baseURL: https://api.cerebras.ai/v1
+    tags:
+      - Inference
+      - LLM
+      - Chat Completions
+      - OpenAI Compatible
+      - Streaming
+      - REST
+    properties:
+      - type: Documentation
+        url: https://inference-docs.cerebras.ai
+      - type: GettingStarted
+        url: https://inference-docs.cerebras.ai/quickstart
+      - type: SDK
+        url: https://github.com/Cerebras/cerebras-cloud-sdk-python
+      - type: SDK
+        url: https://github.com/Cerebras/cerebras-cloud-sdk-node
+      - type: Cookbook
+        url: https://github.com/Cerebras/Cerebras-Inference-Cookbook
+      - type: VSCodeExtension
+        url: https://github.com/Cerebras/vscode-cerebras-chat
+      - type: MCP
+        url: https://github.com/Cerebras/cerebras-code-mcp
+    features:
+      - name: OpenAI-Compatible Chat Completions
+        description: >-
+          Drop-in compatibility with OpenAI client libraries for fast
+          migration of existing applications.
+      - name: Ultra-Fast Token Generation
+        description: >-
+          WSE-3 wafer-scale silicon delivers token-per-second throughput
+          marketed as up to 15x faster than GPU inference.
+      - name: Open-Weight Model Catalog
+        description: >-
+          Hosted access to Llama, Qwen, DeepSeek, and other curated
+          open-source models with no infrastructure setup.
+      - name: Streaming Responses
+        description: >-
+          Server-sent event streaming for chat completions enabling
+          real-time agent and voice UX.
+      - name: Dedicated Endpoints
+        description: >-
+          Private capacity and custom model hosting via dedicated endpoint
+          tier for production workloads.
+      - name: First-Party SDKs
+        description: >-
+          Official Python and TypeScript/Node SDKs with typed model and
+          parameter support.
+      - name: On-Premises Deployment
+        description: >-
+          CS-2 and CS-3 systems for private data center and sovereign AI
+          deployments.
+    useCases:
+      - name: Real-Time Voice and Agent Applications
+        description: >-
+          Power voice agents, copilots, and tool-calling agents that need
+          sub-second time-to-first-token.
+      - name: Coding Copilots
+        description: >-
+          Drive code generation and review assistants with fast inference
+          on open-weight coding models.
+      - name: Reasoning and Research Workloads
+        description: >-
+          Run long-context reasoning loops and chain-of-thought workflows
+          economically at high throughput.
+      - name: Enterprise Inference Migration
+        description: >-
+          Move existing OpenAI-based workloads to Cerebras with minimal
+          code change for cost and latency wins.
+      - name: Healthcare and Life Sciences
+        description: >-
+          Used by partners including GSK and Mayo Clinic for biomedical
+          and clinical AI workloads.
+    integrations:
+      - name: OpenAI SDK
+      - name: LangChain
+      - name: LlamaIndex
+      - name: Vercel AI SDK
+      - name: AWS
+      - name: Hugging Face
+      - name: VS Code
+      - name: Model Context Protocol
+    authentication:
+      - type: API Key
+        description: >-
+          Requests authenticate via Bearer token using a CEREBRAS_API_KEY
+          provisioned from the Cerebras Cloud dashboard.
+common:
+  - type: Website
+    url: https://cerebras.ai
+  - type: Documentation
+    url: https://inference-docs.cerebras.ai
+  - type: Developer Portal
+    url: https://cloud.cerebras.ai
+  - type: Pricing
+    url: https://www.cerebras.ai/inference
+  - type: GitHubOrganization
+    url: https://github.com/Cerebras
+  - type: ModelZoo
+    url: https://github.com/Cerebras/modelzoo
+  - type: Blog
+    url: https://www.cerebras.ai/blog
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/cerebras-systems
+  - type: Twitter
+    url: https://twitter.com/CerebrasSystems
+  - type: Status
+    url: https://status.cerebras.ai
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
