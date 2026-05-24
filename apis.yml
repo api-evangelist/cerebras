@@ -148,6 +148,8 @@ common:
     url: https://twitter.com/CerebrasSystems
   - type: Status
     url: https://status.cerebras.ai
+  - type: LLMsTxt
+    url: https://inference-docs.cerebras.ai/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
