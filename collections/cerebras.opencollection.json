@@ -1,0 +1,81 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Cerebras Inference API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Chat",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Create a chat completion",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.cerebras.ai/v1/chat/completions",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Generates a model response for the given chat conversation. Supports\nstreaming via server-sent events and tool/function calling. Drop-in\ncompatible with the OpenAI client libraries.\n"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Completions",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Create a text completion",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.cerebras.ai/v1/completions",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Generates a text completion for the given prompt."
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Models",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List available models",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.cerebras.ai/v1/models"
+          },
+          "docs": "Returns an array of models hosted on Cerebras Inference."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
