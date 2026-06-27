@@ -3,19 +3,12 @@
   "feeds": [
     {
       "source": "https://www.cerebras.ai/blog",
-      "feed_url": "https://www.cerebras.ai/blog",
-      "title": "",
-      "saved": 0,
-      "method": "none"
-    },
-    {
-      "source": "https://github.com/Cerebras/modelzoo",
-      "feed_url": "https://github.com/Cerebras/modelzoo",
-      "title": "",
-      "saved": 0,
-      "method": "none"
+      "feed_url": "",
+      "saved": 1,
+      "method": "agent-scrape"
     }
   ],
-  "post_count": 1,
-  "fetched": "2026-06-14T20:42:17Z"
+  "post_count": 5,
+  "fetched": "2026-06-27T12:32:49Z",
+  "agent_pulled": "2026-06-27"
 }

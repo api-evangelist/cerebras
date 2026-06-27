@@ -53,9 +53,9 @@ apis:
         url: https://inference-docs.cerebras.ai
       - type: GettingStarted
         url: https://inference-docs.cerebras.ai/quickstart
-      - type: SDK
+      - type: SDKs
         url: https://github.com/Cerebras/cerebras-cloud-sdk-python
-      - type: SDK
+      - type: SDKs
         url: https://github.com/Cerebras/cerebras-cloud-sdk-node
       - type: Cookbook
         url: https://github.com/Cerebras/Cerebras-Inference-Cookbook
@@ -132,7 +132,7 @@ common:
     url: https://cerebras.ai
   - type: Documentation
     url: https://inference-docs.cerebras.ai
-  - type: Developer Portal
+  - type: DeveloperPortal
     url: https://cloud.cerebras.ai
   - type: Pricing
     url: https://www.cerebras.ai/inference
@@ -148,7 +148,7 @@ common:
     url: https://twitter.com/CerebrasSystems
   - type: Status
     url: https://status.cerebras.ai
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://inference-docs.cerebras.ai/llms.txt
 maintainers:
   - FN: Kin Lane
