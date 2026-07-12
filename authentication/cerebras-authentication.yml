@@ -1,0 +1,14 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/cerebras-openapi.yml
+summary:
+  types:
+  - http
+schemes:
+- name: bearerAuth
+  type: http
+  scheme: bearer
+  bearerFormat: API Key
+  description: Provision a CEREBRAS_API_KEY at https://cloud.cerebras.ai
+  sources:
+  - openapi/cerebras-openapi.yml

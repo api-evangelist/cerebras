@@ -128,6 +128,12 @@ apis:
           Requests authenticate via Bearer token using a CEREBRAS_API_KEY
           provisioned from the Cerebras Cloud dashboard.
 common:
+  - type: TrustCenter
+    url: security/cerebras-trust-center.yml
+  - type: DomainSecurity
+    url: security/cerebras-domain-security.yml
+  - type: Authentication
+    url: authentication/cerebras-authentication.yml
   - type: Website
     url: https://cerebras.ai
   - type: Documentation
