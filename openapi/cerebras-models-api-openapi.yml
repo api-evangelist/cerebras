@@ -1,0 +1,99 @@
+openapi: 3.1.0
+info:
+  title: Cerebras Inference Chat Models API
+  description: 'OpenAI-compatible REST API for ultra-low-latency inference on open-weight
+
+    large language models hosted on Cerebras wafer-scale silicon. Supports
+
+    chat completions, text completions, and model discovery via Bearer
+
+    token authentication. Generated as a best-effort spec from public
+
+    Cerebras inference documentation; verify against the official API
+
+    reference at https://inference-docs.cerebras.ai before production use.
+
+    '
+  version: 1.0.0
+  contact:
+    name: Cerebras Inference
+    url: https://inference-docs.cerebras.ai
+  license:
+    name: Cerebras Terms of Service
+    url: https://www.cerebras.ai/terms
+servers:
+- url: https://api.cerebras.ai/v1
+  description: Cerebras Inference Cloud
+security:
+- bearerAuth: []
+tags:
+- name: Models
+  description: Discover available models.
+paths:
+  /models:
+    get:
+      tags:
+      - Models
+      summary: List available models
+      description: Returns an array of models hosted on Cerebras Inference.
+      operationId: listModels
+      responses:
+        '200':
+          description: List of available models.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ModelList'
+        '401':
+          $ref: '#/components/responses/ErrorResponse'
+components:
+  schemas:
+    Model:
+      type: object
+      properties:
+        id:
+          type: string
+        object:
+          type: string
+          example: model
+        created:
+          type: integer
+        owned_by:
+          type: string
+    ModelList:
+      type: object
+      properties:
+        object:
+          type: string
+          example: list
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/Model'
+    Error:
+      type: object
+      properties:
+        error:
+          type: object
+          properties:
+            message:
+              type: string
+            type:
+              type: string
+            code:
+              type: string
+            param:
+              type: string
+  responses:
+    ErrorResponse:
+      description: Error response.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: API Key
+      description: Provision a CEREBRAS_API_KEY at https://cloud.cerebras.ai
