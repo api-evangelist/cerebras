@@ -1,0 +1,18 @@
+{
+  "provider": "cerebras",
+  "sources": [
+    "cerebras-chat-api-openapi.yml",
+    "cerebras-completions-api-openapi.yml",
+    "cerebras-models-api-openapi.yml"
+  ],
+  "outputs": [
+    "cerebras-chat-api-openapi.yml",
+    "cerebras-completions-api-openapi.yml",
+    "cerebras-models-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
