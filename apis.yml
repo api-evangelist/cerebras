@@ -72,7 +72,7 @@ apis:
     url: https://github.com/Cerebras/Cerebras-Inference-Cookbook
   - type: VSCodeExtension
     url: https://github.com/Cerebras/vscode-cerebras-chat
-  - type: MCP
+  - type: Documentation
     url: https://github.com/Cerebras/cerebras-code-mcp
   features:
   - name: OpenAI-Compatible Chat Completions
