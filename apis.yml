@@ -33,6 +33,17 @@ tags:
   - Wafer Scale
   - Hardware
   - Cloud
+  - OpenAI-Compatible
+  - LLM
+  - SDK
+  - Accelerator
+  - High Performance Computing
+tags_raw:
+  - AI Inference
+  - Large Language Models
+  - Wafer Scale
+  - Hardware
+  - Cloud
   - OpenAI Compatible
   - LLM
   - SDK
@@ -53,6 +64,13 @@ apis:
   humanURL: https://inference-docs.cerebras.ai
   baseURL: https://api.cerebras.ai/v1
   tags:
+  - Inference
+  - LLM
+  - Chat Completions
+  - OpenAI-Compatible
+  - Streaming
+  - REST
+  tags_raw:
   - Inference
   - LLM
   - Chat Completions
