@@ -185,6 +185,9 @@ apis:
   - type: OpenAPI
     url: openapi/cerebras-models-api-openapi.yml
 common:
+  - type: CapabilityMap
+    url: capabilities/cerebras-capability-edges.yml
+    name: Cerebras Business Capability Map
   - type: AgenticAccess
     url: agentic-access/cerebras-agentic-access.yml
   - type: TrustCenter
